@@ -406,7 +406,7 @@ section:nth-child(6) {
 
 .call-me {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 123px;
 }
 @media (max-width: 955px) {
@@ -474,14 +474,14 @@ section:nth-child(6) {
   font-size: 16px;
 }
 
-.form-title {
+form {
   display: flex;
   flex-direction: column;
   gap: 20px;
   max-width: 495px;
 }
 @media (max-width: 1275px) {
-  .form-title {
+  form {
     max-width: none;
   }
 }
@@ -520,7 +520,7 @@ textarea {
   display: flex;
   gap: 24px;
 }
-.form .form-icon {
+.form div .form-icon {
   width: 64px;
   height: 64px;
   display: flex;
@@ -530,46 +530,45 @@ textarea {
   border: 1.3px solid black;
 }
 @media (max-width: 725px) {
-  .form .form-icon {
+  .form div .form-icon {
     width: 48px;
     height: 48px;
     display: flex;
     gap: 24px;
   }
 }
-.form .form-icon i {
+.form div .form-icon i {
   font-size: 35px;
 }
 @media (max-width: 725px) {
-  .form .form-icon i {
+  .form div .form-icon i {
     font-size: 25px;
   }
 }
 
-.touch-btn {
-  width: 143px;
+.form-title button {
   height: 64px;
   background-color: black;
   color: white;
   border-radius: 8px;
 }
 @media (max-width: 1275px) {
-  .touch-btn {
+  .form-title button {
     width: 525px;
   }
 }
 @media (max-width: 955px) {
-  .touch-btn {
+  .form-title button {
     width: 294px;
   }
 }
 @media (max-width: 725px) {
-  .touch-btn {
+  .form-title button {
     width: 440px;
   }
 }
 @media (max-width: 475px) {
-  .touch-btn {
+  .form-title button {
     width: 320px;
   }
 }

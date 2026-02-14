@@ -339,7 +339,7 @@ section:nth-child(6) {
 
 .call-me {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 123px;
     @media (max-width: 955px) {
         flex-direction: column-reverse;
@@ -391,7 +391,7 @@ section:nth-child(6) {
     }
 }
 
-.form-title {
+form {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -423,11 +423,11 @@ textarea {
   @media (max-width: 475px) {
     flex-direction: column-reverse;
   }
-  .form-block {
+.form-block {
     display: flex;
     gap: 24px;
   }
-    .form-icon {
+div .form-icon {
     width: 64px;
     height: 64px;
     display: flex;
@@ -441,7 +441,7 @@ textarea {
         display: flex;
         gap: 24px;
     }
-        i {
+    i {
     font-size: 35px;
     @media (max-width: 725px) {
         font-size: 25px;
@@ -449,8 +449,7 @@ textarea {
         } 
     }      
 }
-.touch-btn {
-    width: 143px;
+.form-title button {
     height: 64px;
     background-color: black;
     color: white;
