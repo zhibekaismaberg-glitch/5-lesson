@@ -520,7 +520,7 @@ textarea {
   display: flex;
   gap: 24px;
 }
-.form div .form-icon {
+.form .form-icon {
   width: 64px;
   height: 64px;
   display: flex;
@@ -530,18 +530,18 @@ textarea {
   border: 1.3px solid black;
 }
 @media (max-width: 725px) {
-  .form div .form-icon {
+  .form .form-icon {
     width: 48px;
     height: 48px;
     display: flex;
     gap: 24px;
   }
 }
-.form div .form-icon i {
+.form .form-icon i {
   font-size: 35px;
 }
 @media (max-width: 725px) {
-  .form div .form-icon i {
+  .form .form-icon i {
     font-size: 25px;
   }
 }
