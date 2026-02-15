@@ -165,9 +165,10 @@ section:nth-child(6) {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    max-width: 1280px;
     @media (max-width: 1275px) {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 101px;
+        padding-right: 101px;
     }
     @media (max-width: 955px) {
         padding-left: 101px;
@@ -188,7 +189,7 @@ section:nth-child(6) {
     align-items: center;
     border-radius: 8px;
     border: 1px solid #000;
-    @media (max-width: 355px) {
+    @media (max-width: 475px) {
         height: 150px;
         width: 150px;    
     }
@@ -266,6 +267,11 @@ section:nth-child(6) {
             text-align: center;
         }
     }
+    @media (max-width: 725px) {
+        .avatar {
+            max-width: 440px;
+        }
+    }
 }
 .about-content {
     .header {
@@ -325,6 +331,11 @@ section:nth-child(6) {
         padding: 16px 20px;
         border-radius: 8px;
         margin-right: auto;
+    }
+    i {
+        width: 24px;
+        height: 24px;
+
     }
 }
 
@@ -388,6 +399,10 @@ section:nth-child(6) {
         color: #00000099;
         line-height: 24px;
         font-size: 16px;
+        @media (max-width: 725px) {
+            font-size: 15px;
+            line-height: 22px;
+        }
     }
 }
 
@@ -414,19 +429,35 @@ textarea {
     resize: none;
 }
 .form {
-  display: flex;
-  gap: 24px;
-  @media (max-width: 725px) {
-    flex-direction: column;
-    gap: 16px;
-  }
-  @media (max-width: 475px) {
-    flex-direction: column-reverse;
-  }
-.form-block {
     display: flex;
     gap: 24px;
-  }
+    @media (max-width: 725px) {
+        flex-direction: column;
+        gap: 16px;
+    }
+    @media (max-width: 475px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.form-title {
+    display: flex;
+}
+.form-touch {
+    display: flex;
+    gap: 24px;
+    @media (max-width: 725px) {
+        flex-direction: column;
+    }
+}
+
+form button {
+    padding: 21px 19px;
+}
+.form_icons {
+    display: flex;
+    gap: 24px;
+}
 .form-icon {
     width: 64px;
     height: 64px;
@@ -442,12 +473,11 @@ textarea {
         gap: 24px;
     }
     i {
-    font-size: 35px;
-    @media (max-width: 725px) {
-        font-size: 25px;
+        font-size: 35px;
+        @media (max-width: 725px) {
+            font-size: 25px;
+        }
     }
-        } 
-    }      
 }
 .form-title button {
     height: 64px;
@@ -496,4 +526,13 @@ ul a {
     border-radius: 8px;
     background-color: black;
     color: #fff;
+}
+.footer {
+    background: #000;
+    color: #fff;
+}
+.footer img {
+    width: 140px;
+    height: 40px;
+
 }

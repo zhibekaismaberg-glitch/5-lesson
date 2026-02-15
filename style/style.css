@@ -201,11 +201,12 @@ section:nth-child(6) {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  max-width: 1280px;
 }
 @media (max-width: 1275px) {
   .skills-container {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 101px;
+    padding-right: 101px;
   }
 }
 @media (max-width: 955px) {
@@ -233,7 +234,7 @@ section:nth-child(6) {
   border-radius: 8px;
   border: 1px solid #000;
 }
-@media (max-width: 355px) {
+@media (max-width: 475px) {
   .skill-card {
     height: 150px;
     width: 150px;
@@ -325,6 +326,11 @@ section:nth-child(6) {
     text-align: center;
   }
 }
+@media (max-width: 725px) {
+  .about .avatar {
+    max-width: 440px;
+  }
+}
 
 .about-content .header {
   text-align: left;
@@ -393,6 +399,10 @@ section:nth-child(6) {
   padding: 16px 20px;
   border-radius: 8px;
   margin-right: auto;
+}
+.project i {
+  width: 24px;
+  height: 24px;
 }
 
 .project:nth-child(even) .project-image {
@@ -473,6 +483,12 @@ section:nth-child(6) {
   line-height: 24px;
   font-size: 16px;
 }
+@media (max-width: 725px) {
+  .contacts .description {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
 
 form {
   display: flex;
@@ -516,11 +532,31 @@ textarea {
     flex-direction: column-reverse;
   }
 }
-.form .form-block {
+
+.form-title {
+  display: flex;
+}
+
+.form-touch {
   display: flex;
   gap: 24px;
 }
-.form .form-icon {
+@media (max-width: 725px) {
+  .form-touch {
+    flex-direction: column;
+  }
+}
+
+form button {
+  padding: 21px 19px;
+}
+
+.form_icons {
+  display: flex;
+  gap: 24px;
+}
+
+.form-icon {
   width: 64px;
   height: 64px;
   display: flex;
@@ -530,18 +566,18 @@ textarea {
   border: 1.3px solid black;
 }
 @media (max-width: 725px) {
-  .form .form-icon {
+  .form-icon {
     width: 48px;
     height: 48px;
     display: flex;
     gap: 24px;
   }
 }
-.form .form-icon i {
+.form-icon i {
   font-size: 35px;
 }
 @media (max-width: 725px) {
-  .form .form-icon i {
+  .form-icon i {
     font-size: 25px;
   }
 }
@@ -602,4 +638,14 @@ ul a {
   border-radius: 8px;
   background-color: black;
   color: #fff;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+}
+
+.footer img {
+  width: 140px;
+  height: 40px;
 }/*# sourceMappingURL=style.css.map */
